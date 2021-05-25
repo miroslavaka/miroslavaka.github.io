@@ -2,52 +2,29 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Superkvíz</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Coin Hunter</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body>
-    <h1>Superkvíz</h1>
+<body onload='loadPage()' onkeydown='getKeyAndMove(event)'>
 
-    <!-- přidat <div> pro kvíz -->
-    <!-- do něj přidat <div>y pro samotné držení otázky -->
-    <!-- také nezapomenout na <div> pro výsledek a hodnocení -->
+    <img id="panacek" src="obrazky/panacek.png" alt="Panáček">
 
-    <div class="kviz">
-        <p id="poradi">Otazka <span id="cislo"></span>/4</p>
-        <h2 id="otazka"></h2>
-        <div class="obsah">
-            <div class="foto">
-                <img src="" alt="">
-            </div>
+    <img id="mince" src="obrazky/mince.png" alt="Mince">
 
-            <div id="moznosti">
-                <!--<ul id="odpovedi">
-                    <li data-odpoved="0">Ledová královna</li>
-                    <li data-odpoved="1">Sněhurka</li>
-                    <li data-odpoved="2">Abc</li>
-                </ul>-->
-            </div>
-        </div>
-    </div>
-    <div class="vysledek">
-        <h2>Tvoje hodnocení</h2>
-        <div id='volby'>
-            <!--  <h3></h3>
-            <p></p>
-            <p></p>-->
-        </div>
+    <div id="score">0</div>
 
-        <div id="hodnoceni">
-            <h2>Správne <span class="pocet"></span> ze <span class="total"></span> otázek. Úspěšnost <span class="percento"></span>%</h2>
-        </div>
-    </div>
+    <audio id="hudba" src="zvuky/hudba.mp3" autoplay loop></audio>
 
-    <script src="kviz.js"></script>
+    <audio id="zvukmince" src="zvuky/mince.mp3"></audio>
 
+    <audio id="zvukfanfara" src="zvuky/fanfara.mp3"></audio>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
