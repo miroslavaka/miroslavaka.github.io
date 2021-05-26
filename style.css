@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 :root {
     --pozadi: lightskyblue;
     --score: red;
@@ -27,7 +28,7 @@ body {
 	background-image: url('obrazky/pozadi/swirl.png');
 	background-image: url('obrazky/pozadi/seigaiha.png');
 	background-image: url('obrazky/pozadi/hypnotize.png');*/
-    b
+    font-family: 'Poppins', sans-serif;
 }
 
 #score {
@@ -47,4 +48,46 @@ body {
 
 #panacek {
     z-index: 1;
+}
+
+#hudbaon {
+    position: absolute;
+    top: 5px;
+    left: 1240px;
+    background: blanchedalmond;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding: 7px 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, .3);
+}
+
+#hudbaon:hover {
+    transform: scale(1.1);
+}
+
+#hudbaoff {
+    position: absolute;
+    top: 5px;
+    left: 1350px;
+    background: blanchedalmond;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding: 7px 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, .3);
+}
+
+#hudbaoff:hover {
+    transform: scale(1.1);
+}
+
+#info {
+    position: absolute;
+    top: -5px;
+    left: 120px;
+    font-size: small;
+    padding: 7px 5px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, .3);
 }

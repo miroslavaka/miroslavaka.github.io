@@ -112,3 +112,12 @@ function checkCollision() {
         getRandomPosition();
     }
 }
+
+//hudba on/of
+function onHudba() {
+    hudba.play();
+}
+
+function offHudba() {
+    hudba.pause();
+}
