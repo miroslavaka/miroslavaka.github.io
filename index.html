@@ -1,38 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Coin Hunter</title>
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Personal portfolio webpage</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body onload='loadPage()' onkeydown='getKeyAndMove(event)'>
+<body>
+    <!--NAVIGATION-->
+    <nav id="navbar">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#profile-link">Contact</a></li>
+        </ul>
+    </nav>
 
-    <img id="panacek" src="obrazky/panacek.png" alt="Panáček">
+    <!--WELCOME-->
+    <section id="welcome-section">
+        <h1>Welcome, I am Mira</h1>
+        <h3>aspiring web developer</h3>
+    </section>
 
-    <img id="mince" src="obrazky/mince.png" alt="Mince">
+    <!--ABOUT-->
+    <section id="about">
 
-    <div id="score">0</div>
+    </section>
 
-    <audio id="hudba" src="zvuky/hudba.mp3" autoplay loop></audio>
+    <!--PROJECTS-->
+    <section id="projects">
+        <h2>My projects:</h2>
+        <div class="grid">
+            <a href="https://github.com/miroslavaka/projekt1-coin-hunter" class="project-tile">
+                <img src="images/obr1.jpg" target="_blank" alt="link to project1">
+                <p><span class="code">&lt;</span>Game: Coin hunter<span class="code">&#47;&gt;</span></p>
+            </a>
+            <a href="https://github.com/miroslavaka/projekt2-superkviz" class="project-tile">
+                <img src="images/obr2.jpg" target="_blank" alt="link to project2">
+                <p><span class="code">&lt;</span>Superkviz<span class="code">&#47;&gt;</span></p>
+            </a>
+            <a href="https://github.com/miroslavaka/projekt3-recepty" class="project-tile">
+                <img src="images/obr3.jpg" target="_blank" alt="ink to project3">
+                <p><span class="code">&lt;</span>Recepty<span class="code">&#47;&gt;</span></p>
+            </a>
+        </div>
+        <div class="allprojects">
+            <a href="https://codepen.io/miraka/pens/public" target="_blank" class="btn-all-projects">All projects<i class="fa fa-caret-right"></i></a>
+        </div>
+    </section>
 
-    <audio id="zvukmince" src="zvuky/mince.mp3"></audio>
+    <!--CONTACT-->
+    <section id="profile-link">
+        <h1>Let's work together:</h1>
+        <a href="https://github.com/miroslavaka" target="_blank"><i class="fa fa-github"></i></a>
+        <a href="https://twitter.com/mirra_ka" target="_blank"><i class="fa fa-twitter"></i></a>
+    </section>
 
-    <audio id="zvukfanfara" src="zvuky/fanfara.mp3"></audio>
-
-    <button id="hudbaon" onclick="onHudba()">Zapni hudbu</button>
-    <button id="hudbaoff" onclick="offHudba()">Vypni hudbu</button>
-
-    <div id="info">
-        <span>Panaček zbiera mince.
-            <br>Šípkami ← → ↑ ↓ ovladaš panáčka.
-            </span>
-    </div>
-    <script src="main.js"></script>
+    <footer>
+        <p style="font-size:12px; padding-top:20px; text-align:center;">
+            <strong>Responsive Web Design Project</strong>.
+    </footer>
 </body>
 
 </html>
